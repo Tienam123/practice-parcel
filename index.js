@@ -1,0 +1,1 @@
+const gridElements=document.querySelectorAll(".block");function getRandomColor(){for(var o="#",r=0;r<6;r++)o+="0123456789ABCDEF"[Math.floor(16*Math.random())];return o}gridElements.forEach((o=>{o.style.backgroundColor=getRandomColor()})),console.log(gridElements);

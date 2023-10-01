@@ -1,6 +1,3 @@
-//Подключение шрифта
-@use 'sass:math';
-
 @mixin font($font_name, $file_name, $weight, $style) {
   @font-face {
     font-family: $font_name;
@@ -88,7 +85,7 @@
   // Если не поддерживается clamp();
   @supports not (#{$property}: $propertyValue) {
     #{$property}: calc(
-      #{rem($minSize)} + #{$addSize} * (100vw - #{rem($widthTo)}) / #{math.div($widthFrom, 16) -
+            #{rem($minSize)} + #{$addSize} * (100vw - #{rem($widthTo)}) / #{math.div($widthFrom, 16) -
 				math.div($widthTo, 16)}
     );
   }
