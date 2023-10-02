@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 @mixin font($font_name, $file_name, $weight, $style) {
   @font-face {
     font-family: $font_name;
@@ -7,6 +9,17 @@
     font-style: #{$style};
   }
 }
+
+@mixin fontLocal($font_name,$file_name,$format,$weight,$style) {
+  @font-face {
+    font-family: '#{$font_name}';
+    font-display: swap;
+    src: url($file_name) format('#{$format}');
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
 
 //Percent
 @function percent($px, $from) {
