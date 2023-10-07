@@ -1,0 +1,37 @@
+%button {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+
+}
+
+.menu-buttons__basket {
+  @extend %button;
+  border: 1px solid teal;
+  background-color: teal;
+
+  &:hover, &:focus {
+    background-color: #fff;
+    color: teal;
+    border: 1px solid teal;
+  }
+}
+
+.menu-buttons__mail {
+  @extend %button;
+  color: teal;
+  background-color: transparent;
+  border: 1px solid teal;
+
+  &:hover, &:focus {
+    background-color: teal;
+    color: white;
+  }
+}
+
+.header__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}

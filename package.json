@@ -1,8 +1,22 @@
 {
-  "name": "prepros-project",
-  "version": "1.0.0",
-  "description": "This is a dummy package.json file created by Prepros to manage packages with NPM. You can edit this file to add your own information.",
+  "name": "vanilla-app-template",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build --base=/vanilla-app-template/",
+    "preview": "vite preview"
+  },
   "devDependencies": {
-    "group-css-media-queries": "^1.4.1"
+    "glob": "^8.1.0",
+    "sass": "^1.69.0",
+    "vite": "^4.0.5"
+  },
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "vite-plugin-full-reload": "^1.0.5",
+    "vite-plugin-html-inject": "^1.0.1"
   }
 }

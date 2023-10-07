@@ -1,0 +1,22 @@
+#button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: teal;
+  color: white;
+  border-radius: 4px;
+  transition: all 500ms ease-out;
+  border: 1px solid teal;
+
+  &:hover {
+    background-color: white;
+    color: teal;
+    border: 1px solid teal;
+  }
+}
+body {
+  text-align: center;
+}
+input {
+  border: 1px solid teal;
+  outline: none;
+}
